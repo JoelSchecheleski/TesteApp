@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".FormCliente">
+
+    <EditText
+        android:id="@+id/editText_Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_Endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Endereço"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_numero"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Número"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/editText_Uf"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="-45dp"
+        android:ems="10"
+        android:hint="UF"
+        android:inputType="textPersonName" />
+
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/editText_Nasc"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nasc"
+        android:inputType="number"
+        app:met_mask="##/##/####" />
+
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/editText_Telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="-45dp"
+        android:hint="Telefone"
+        android:inputType="number"
+        app:met_mask="(##) ####-####" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton_Fem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fem" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Masc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Masc" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_Salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="?attr/actionModeSplitBackground"
+        android:text="Salvar"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+</LinearLayout>
